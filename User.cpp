@@ -1,6 +1,7 @@
 #include "tool/tool.h"
 
 int main() {
+	//两个进程面对ctrl+c执行out函数
 	signal(SIGINT, out);
 
 	char Server_host[20] = "";
@@ -33,6 +34,7 @@ int main() {
 		int fd;
 		int fatherpid = getppid();
 		if (-1 == (fd = Server_creat(User_port))) {
+			kill(fatherpid, SIGKILL);
 			exit(1);
 		}
 
@@ -43,6 +45,7 @@ int main() {
 			if(-1 == (newfd = accept(fd, (sockaddr *)&addr, &len))) {
 				continue;
 			}
+			printf("接收到链接\n");
 		}
 
 		close(fd);
@@ -51,12 +54,12 @@ int main() {
 	} else {		//父进程用于客户端向服务端建立链接
 		//初始化客户端并与服务端建立连接
 		int fd;
-		if ((fd = User_creat(Server_host, Server_port)) == -1) {
+		if (-1 == (fd = User_creat(Server_host, Server_port))) {
 			exit(1);
 		}
 
 		//客户端对服务端做的操作
-		char *buffer = (char *)malloc(sizeof(char) * 256);
+		char buffer[256];
 		while(1) {
 			scanf("%s", buffer);
 			if (!strcmp(buffer, "quit")) {
@@ -65,7 +68,6 @@ int main() {
 		}
 
 		//关掉套接字并退出
-		free(buffer);
 		close(fd);
 		kill(pid, SIGKILL);
 		exit(0);

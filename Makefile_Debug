@@ -1,0 +1,48 @@
+#设置编译器
+CC = g++
+
+#设置编译环境, -g增加调试信息 -Wall打开大部分警告信息
+CFLAGS = -g -Wall
+
+#Server服务端依赖的目标文件
+OBJS1 = Server.o tool/tool.o hash/hash.o rwt/rwt.o
+
+#User服务端依赖的目标文件
+OBJS2 = User.o tool/tool.o
+
+#声明clean为伪目标
+.PHONY: clean
+
+#同时生成客户端和服务端
+all: User Server
+
+#生成User客户端
+User: $(OBJS2)
+	$(CC) $(CFLAGS) $(OBJS2) -o User
+
+#生成Server服务端
+Server: $(OBJS1)
+	$(CC) $(CFLAGS) $(OBJS1) -o Server
+
+#生成User目标文件
+User.o: User.cpp tool/tool.h
+	$(CC) $(CFLAGS) -D DEBUG -c User.cpp
+
+#生成Server目标文件
+Server.o: Server.cpp tool/tool.h hash/hash.h rwt/rwt.h
+	$(CC) $(CFLAGS) -D DEBUG -c Server.cpp
+
+#生成tool目标文件
+tool.o: tool/tool.cpp tool/tool.h
+	$(CC) $(CFLAGS) -D DEBUG -c tool/tool.cpp
+
+#生成hash目标文件
+hash.o: hash/hash.cpp hash/hash.h
+	$(CC) $(CFLAGS) -D DEBUG -c hash/hash.cpp
+
+#生成rwt目标文件
+rwt.o: rwt/rwt.cpp rwt/rwt.h
+	$(CC) $(CFLAGS) -D DEBUG -c rwt/rwt.cpp
+
+clean: 
+	rm -f $(OBJS1) $(OBJS2) User Server

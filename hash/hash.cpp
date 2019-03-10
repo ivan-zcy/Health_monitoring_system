@@ -6,7 +6,7 @@ unsigned int hash (User *user) {
 	unsigned int val = 0;
 
 	for(int i = 0; i < strlen(p); i++) {
-		val = val * 33 + p[i];
+		val = val * 131 + p[i];
 	}
 
 	return val % 97;

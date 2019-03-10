@@ -81,10 +81,7 @@ void Writer(User *user, int flag) {
 
 //线程运行函数
 void* wel(void *t) {
-	//初始化用户
 	User *user = (User *)t;
-	int port = 8732;
-	char *buffer = (char *)malloc(sizeof(char) * 256);
 	
 	//获取该用户hash值
 	int val = hash(user);
@@ -92,30 +89,29 @@ void* wel(void *t) {
 	//添加用户
 	Writer(user, 0);
 	
-	//每隔5秒钟心跳检测一次，确定链接是否存在
-	while(1) {
-		sleep(5);
-		int fd = User_creat(inet_ntoa(user -> addr -> sin_addr), port);
-		if (-1 == fd) {
-			break;
-		}
-		close(fd);
-	}
-
-	//删除用户
-	free(buffer);
-	Writer(user, 1);
-	
 	//退出进程
 	pthread_exit(0);
 }
 
 //定时查看任务
 void* clock_get(void *t) {
-	//循环查询
+	//每隔5秒钟心跳检测一次，确定哈希表中的所有链接是否存在
+	int port = 8732;
 	while(1) {
+		for (int i = 0; i < MAXN; i++) {
+			User *p = hash_user.tail[i];
+			while(p != NULL) {
+				int fd = User_creat(inet_ntoa(p -> addr -> sin_addr), port);
+				if (-1 == fd) {
+					Writer(p, 1);
+				} else {
+					close(fd);
+				}
+				p = p -> next;
+			}
+		}
 		Reader();
-		sleep(10);
+		sleep(5);
 	}
 
 	//退出线程
