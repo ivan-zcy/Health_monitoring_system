@@ -1,4 +1,4 @@
-#include "rwt/rwt.h"
+#include "pool/pool.h"
 
 pthread_mutex_t rwt, mutex1, mutex2, mutex3, RWmutex;
 int readCount, writeCount;
@@ -14,6 +14,9 @@ int main () {
 		exit(1);
 	}
 	Server_port = atoi(Server_string_port);
+
+	//初始化线程池
+	thread_pool pool(5);
 
 	//初始化信号量
 	init();
@@ -49,9 +52,10 @@ int main () {
 		pthread_create(&pd, NULL, wel, user);
 	}
 
-	//关掉套接字,信号量并退出
+	//关掉套接字,信号量，线程池并退出
 	pthread_join(clock_t, NULL);
 	close(fd);
 	goodby();
+	pool.del();
 	return 0;
 }

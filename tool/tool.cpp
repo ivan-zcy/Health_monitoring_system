@@ -91,6 +91,7 @@ int User_creat(char *host, int port) {
 //读取配置文件key对应的val值
 int read_conf(char *filename, const char *key_name, char *val) {
 	//打开配置文件
+	int flag = 0;
 	char *buffer = NULL;
 	char *p = NULL;
 	FILE *file = NULL;
@@ -108,9 +109,13 @@ int read_conf(char *filename, const char *key_name, char *val) {
 		if (strcmp(key_name, p) == 0) {
 			p = strtok(NULL, "\n");
 			strcpy(val, p);
+			flag = 1;
 		}
 		while(p != NULL) {
 			p = strtok(NULL, "\n");
+		}
+		if (flag) {
+			break;
 		}
 	}
 

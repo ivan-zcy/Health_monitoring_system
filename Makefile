@@ -5,7 +5,7 @@ CC = g++
 CFLAGS = -g -Wall
 
 #Server服务端依赖的目标文件
-OBJS1 = Server.o tool/tool.o hash/hash.o rwt/rwt.o
+OBJS1 = Server.o tool/tool.o hash/hash.o rwt/rwt.o pool/pool.o
 
 #User服务端依赖的目标文件
 OBJS2 = User.o tool/tool.o
@@ -18,19 +18,19 @@ all: User Server
 
 #生成User客户端
 User: $(OBJS2)
-	$(CC) $(CFLAGS) $(OBJS2) -o User
+	$(CC) $(CFLAGS) $(OBJS2) -o User 
 
 #生成Server服务端
 Server: $(OBJS1)
-	$(CC) $(CFLAGS) $(OBJS1) -o Server
+	$(CC) $(CFLAGS) $(OBJS1) -o Server -pthread
 
 #生成User目标文件
 User.o: User.cpp tool/tool.h
 	$(CC) $(CFLAGS) -c User.cpp
 
 #生成Server目标文件
-Server.o: Server.cpp tool/tool.h hash/hash.h rwt/rwt.h
-	$(CC) $(CFLAGS) -c Server.cpp
+Server.o: Server.cpp pool/pool.h
+	$(CC) $(CFLAGS) -c Server.cpp -pthread
 
 #生成tool目标文件
 tool.o: tool/tool.cpp tool/tool.h
@@ -42,7 +42,11 @@ hash.o: hash/hash.cpp hash/hash.h
 
 #生成rwt目标文件
 rwt.o: rwt/rwt.cpp rwt/rwt.h
-	$(CC) $(CFLAGS) -c rwt/rwt.cpp
+	$(CC) $(CFLAGS) -c rwt/rwt.cpp -pthread
+
+#生成pool目标文件
+pool.o: pool/pool.cpp pool/pool.h
+	$(CC) $(CFLAGS) -c pool/pool.cpp
 
 clean: 
 	rm -f $(OBJS1) $(OBJS2) User Server
