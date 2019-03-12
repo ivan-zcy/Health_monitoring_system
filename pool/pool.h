@@ -1,22 +1,15 @@
 #ifndef _POOL_H_
 #define _POOL_H_
 
-#include "../rwt/rwt.h"
-
-//任务接口节点
-struct Work {
-    void* (*func) (void *arg);  //任务所执行的命令
-    void *arg;                  //任务所执行命令的参数
-    Work *next;                 //下一个任务
-};
+#include "../hash/hash.h"
 
 //线程池中线程执行的回掉函数
 void* thread_pool_func(void *arg);
 
 //线程池
 struct thread_pool{
-    //任务队列
-    Work *head;
+    //任务哈希表
+    Hash *hash_user;
     //线程指针
     pthread_t *pd;
 
@@ -29,18 +22,16 @@ struct thread_pool{
 
     //线程池中线程的总量
     int pthread_num;
-    //当前任务队列中任务数量
-    int work_num;
 
     //初始化函数
     thread_pool(int pthread_num) {
         this -> pthread_num = pthread_num;
-        this -> work_num = 0;
         this -> shutdown = 0;
+        this -> hash_user = (Hash *)malloc(sizeof(Hash));
+        this -> hash_user -> init();
         pthread_mutex_init(&this ->mutex, NULL);
         pthread_cond_init(&this -> cond, NULL);
-        this -> head = NULL;
-        pd = (pthread_t *)malloc(sizeof(pthread_t) * pthread_num);
+        this -> pd = (pthread_t *)malloc(sizeof(pthread_t) * pthread_num);
         for (int i = 0; i < pthread_num; i++) {
             pthread_create(&this -> pd[i], NULL, thread_pool_func, this);
         }

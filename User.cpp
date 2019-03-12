@@ -45,7 +45,7 @@ int main() {
 			if(-1 == (newfd = accept(fd, (sockaddr *)&addr, &len))) {
 				continue;
 			}
-			printf("接收到链接\n");
+			DBG("接收到链接\n");
 		}
 
 		close(fd);

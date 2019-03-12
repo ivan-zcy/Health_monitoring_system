@@ -1,9 +1,9 @@
-#include "pool/pool.h"
+#include "rwt/rwt.h"
 
 pthread_mutex_t rwt, mutex1, mutex2, mutex3, RWmutex;
 int readCount, writeCount;
 int const MAXN = 100;
-Hash hash_user;
+Hash Hash_User;
 
 int main () {
 	//获取配置信息
@@ -17,6 +17,9 @@ int main () {
 
 	//初始化线程池
 	thread_pool pool(5);
+
+	//初始化用户哈希表
+	Hash_User.init();
 
 	//初始化信号量
 	init();
@@ -33,8 +36,7 @@ int main () {
 
 	while(1) {
 		int newfd;
-		pthread_t pd;
-		User *user = (User *)malloc(sizeof(User));
+		Work *work = (Work *)malloc(sizeof(work));
 		struct sockaddr_in *addr = (struct sockaddr_in *)malloc(sizeof(struct sockaddr_in));
 		socklen_t socklen = sizeof(struct sockaddr_in);
 		
@@ -44,12 +46,16 @@ int main () {
 			continue;
 		}
 
-		//创建用户信息并加入到哈希表中
-		user -> addr = addr;
-		user -> next = NULL;
+		//创建任务信息节点
+		work -> arg = (void *)addr;
+		work -> func = wel;
+		work -> next = NULL;
 
-		//分出一个线程来处理该用户
-		pthread_create(&pd, NULL, wel, user);
+		//写入哈希表
+		Writer(work, 0);
+
+		//向线程池添加任务
+		pool.add_work(work);
 	}
 
 	//关掉套接字,信号量，线程池并退出

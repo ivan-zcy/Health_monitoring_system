@@ -5,36 +5,37 @@
 
 extern int const MAXN;
 
-//用户结构体
-struct User {
-	sockaddr_in *addr;
-	User *next;
+//任务接口节点
+struct Work {
+    void* (*func) (void *arg);  //任务所执行的函数
+    void *arg;         //任务所执行命令的参数，这里是sockaddr_in *
+    Work *next;        //下一个任务
 };
 
 //哈希结构体
 struct Hash {	
-	User* tail[100];
+	Work* tail[100];
 	int len;
-	Hash() {
-		this -> len = 0;
-		for (int i = 0; i < MAXN; i++) {
-			this -> tail[i] = NULL;
-		}
-	}
+
+	//初始化
+	void init();
+
+	//返回哈希值
+	unsigned int hash (Work *work);
+
+	//增加
+	void add (Work *work);
+
+	//删除
+	int del (Work *work);
+
+	//全部删除
+	void alldel();
+
+	//查看
+	void getout ();
 };
 
-extern Hash hash_user;
-
-//返回哈希值
-unsigned int hash (User *user);
-
-//增加
-void add (User *user);
-
-//删除
-int del (User *user);
-
-//查看
-void getout ();
+extern Hash Hash_User;
 
 #endif

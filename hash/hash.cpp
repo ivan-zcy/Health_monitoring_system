@@ -1,54 +1,66 @@
 #include "./hash.h"
 
+//初始化
+void Hash::init() {
+	this -> len = 0;
+	for (int i = 0; i < MAXN; i++) {
+		this -> tail[i] = NULL;
+	}
+}
+
 //返回哈希值
-unsigned int hash (User *user) {
-	char *p = inet_ntoa(user -> addr -> sin_addr);
+unsigned int Hash::hash (Work *work) {
+	sockaddr_in *addr = (sockaddr_in *)work -> arg;
+	char *p = inet_ntoa(addr -> sin_addr);
 	unsigned int val = 0;
 
 	for(int i = 0; i < strlen(p); i++) {
 		val = val * 131 + p[i];
 	}
 
-	return val % 97;
+	return val % MAXN;
 }
 
 //增加
-void add (User *user) {
-	unsigned int val = hash(user);
+void Hash::add (Work *work) {
+	unsigned int val = hash(work);
 
-	user -> next = hash_user.tail[val];
-	hash_user.tail[val] = user;
-	hash_user.len ++;
+	work -> next = this -> tail[val];
+	this -> tail[val] = work;
+	this -> len ++;
 
 	return;
 }
 
 //删除
-int del (User *user) {
-	unsigned int val = hash(user);
+int Hash::del (Work *work) {
+	unsigned int val = hash(work);
+	sockaddr_in *addr = (sockaddr_in *)work -> arg;
 
-	if (hash_user.tail[val] == NULL) {
+	if (this -> tail[val] == NULL) {
 		printf("del faild\n");
 		return -1;
 	}
 
-	User *p = hash_user.tail[val];
-	if (strcmp(inet_ntoa(p -> addr -> sin_addr), inet_ntoa(user -> addr -> sin_addr)) == 0 && htons(p -> addr -> sin_port) == htons(user -> addr -> sin_port)) {
-		hash_user.tail[val] = p -> next;
-		free(p -> addr);
+	Work *p = this -> tail[val];
+	sockaddr_in *addr1 = (sockaddr_in *)p -> arg;
+	if (strcmp(inet_ntoa(addr1 -> sin_addr), inet_ntoa(addr -> sin_addr)) == 0 && htons(addr1 -> sin_port) == htons(addr -> sin_port)) {
+		this -> tail[val] = p -> next;
+		free(p -> arg);
 		free(p);
-		hash_user.len --;
+		this -> len --;
 		return 0;
 	}
 
-	User *old = p;
+	Work *old = p;
 	p = p -> next;
 	while (p != NULL) {
-		if (strcmp(inet_ntoa(p -> addr -> sin_addr), inet_ntoa(user -> addr -> sin_addr)) == 0 && htons(p -> addr -> sin_port) == htons(user -> addr -> sin_port)) {
+		addr1 = (sockaddr_in *)p -> arg;
+		if (strcmp(inet_ntoa(addr1 -> sin_addr), inet_ntoa(addr -> sin_addr)) == 0 && htons(addr1 -> sin_port) == htons(addr -> sin_port)) {
 			old -> next = p -> next;
-			free(p -> addr);
+			free(p -> arg);
 			free(p);
-			hash_user.len --;
+			this -> len --;
 			return 0;
 		}
 		old = p;
@@ -59,16 +71,33 @@ int del (User *user) {
 	return -1;
 }
 
-//查看
-void getout () {
-	printf("当前共有%d人在线，IP和端口号分别是：\n", hash_user.len);
+//全部删除
+void Hash::alldel() {
 	for (int i = 0; i < MAXN; i++) {
-		User *p = hash_user.tail[i];
+		Work *work = this -> tail[i];
+		while(work != NULL) {
+			Work *old = work;
+			work = work -> next;
+			free(old -> arg);
+			free(old);
+		}
+	}
+
+	return;
+}
+
+//查看
+void Hash::getout () {
+	printf("当前共有%d人在线，IP和端口号分别是：\n", this -> len);
+	for (int i = 0; i < MAXN; i++) {
+		Work *p = this -> tail[i];
 		while(p != NULL) {
-			printf("%s %d\n", inet_ntoa(p -> addr -> sin_addr), htons(p -> addr -> sin_port));
+			sockaddr_in *addr = (sockaddr_in *)p -> arg;
+			printf("%s %d\n", inet_ntoa(addr -> sin_addr), htons(addr -> sin_port));
 			p = p -> next;
 		}
 	}
+	
 	return;
 }
 

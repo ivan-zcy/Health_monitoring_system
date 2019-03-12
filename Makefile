@@ -29,7 +29,7 @@ User.o: User.cpp tool/tool.h
 	$(CC) $(CFLAGS) -c User.cpp
 
 #生成Server目标文件
-Server.o: Server.cpp pool/pool.h
+Server.o: Server.cpp rwt/rwt.h
 	$(CC) $(CFLAGS) -c Server.cpp -pthread
 
 #生成tool目标文件
@@ -40,13 +40,14 @@ tool.o: tool/tool.cpp tool/tool.h
 hash.o: hash/hash.cpp hash/hash.h
 	$(CC) $(CFLAGS) -c hash/hash.cpp
 
+#生成pool目标文件
+pool.o: pool/pool.cpp pool/pool.h
+	$(CC) $(CFLAGS) -c pool/pool.cpp -pthread
+
 #生成rwt目标文件
 rwt.o: rwt/rwt.cpp rwt/rwt.h
 	$(CC) $(CFLAGS) -c rwt/rwt.cpp -pthread
 
-#生成pool目标文件
-pool.o: pool/pool.cpp pool/pool.h
-	$(CC) $(CFLAGS) -c pool/pool.cpp
 
 clean: 
 	rm -f $(OBJS1) $(OBJS2) User Server

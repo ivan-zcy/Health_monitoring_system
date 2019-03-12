@@ -8,7 +8,7 @@ void* thread_pool_func(void *arg) {
         pthread_mutex_lock(&t -> mutex);
 
         //循环等待接收任务
-        while(!(t -> work_num) && !(t -> shutdown)) {
+        while(!(t -> hash_user -> len) && !(t -> shutdown)) {
             pthread_cond_wait(&t -> cond, &t -> mutex);
         }
 
@@ -20,9 +20,15 @@ void* thread_pool_func(void *arg) {
         }
 
         //取出队首任务
-        t -> work_num --;
-        Work *p = t -> head;
-        t -> head = p -> next;
+        t -> hash_user -> len --;
+        Work *p = NULL;
+        for (int i = 0; i < MAXN; i++) {
+            p = t -> hash_user -> tail[i];
+            if (p != NULL) {
+                t -> hash_user -> tail[i] = p -> next;
+                break;
+            }
+        }
 
         //解锁
         pthread_mutex_unlock(&t -> mutex);
@@ -38,16 +44,17 @@ void* thread_pool_func(void *arg) {
 void thread_pool::add_work(Work *work) {
     pthread_mutex_lock(&this -> mutex);
     //将任务加入到等待队列
-    Work *p = this -> head;
+    unsigned int inx = this -> hash_user -> hash(work);
+    Work *p = this -> hash_user -> tail[inx];
     if (p == NULL) {
-        this -> head = work;
+        p = work;
     } else {
         while(p -> next != NULL) {
             p = p -> next;
         }
         p -> next = work;
     }
-    this -> work_num ++;
+    this -> hash_user -> len ++;
     pthread_mutex_unlock(&this -> mutex);
 
     //唤醒一个等待线程
@@ -73,12 +80,8 @@ int thread_pool::del() {
     free(pd);
 
     //销毁任务队列的所有任务
-    Work *p = this -> head;
-    while(p != NULL) {
-        p = this -> head;
-        this -> head = p -> next;
-        free(p);
-    }
+    this -> hash_user -> alldel();
+    free(this -> hash_user);
 
     //销毁条件变量和锁
     pthread_cond_destroy(&this -> cond);

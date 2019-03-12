@@ -1,7 +1,7 @@
 #ifndef _RWT_H_
 #define _RWT_H_
 
-#include "../hash/hash.h"
+#include "../pool/pool.h"
 
 extern pthread_mutex_t rwt, mutex1, mutex2, mutex3, RWmutex;
 extern int readCount, writeCount;
@@ -16,9 +16,9 @@ void goodby();
 void Reader();
 
 //写者
-void Writer();
+void Writer(Work *work, int flag);
 
-//线程运行函数
+//创建链接的任务函数
 void* wel(void *t);
 
 //定时查看任务
