@@ -1,0 +1,13 @@
+#!/usr/bin/expect 
+for {set i 1} {$i < 10} {incr i} {
+    spawn ssh gin.tama@pi$i
+    expect {
+        "*yes/no" {send "yes\r";exp_continue}
+        "*password" {send "haizei\r"}
+    }
+    mkdir .ssh
+    spawn scp gintama@192.168.2.86:~/.ssh/id_rsa.pub ~/.ssh/known_hosts
+    expect{
+        "*password" {send"536842\r"}
+    }
+}

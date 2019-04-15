@@ -1,0 +1,646 @@
+[47;30m[2019-03-26 18:47][0m Map 0 : CpuLog.sh
+[47;30m[2019-03-26 18:47][0m Map 1 : MemLog.sh
+[47;30m[2019-03-26 18:47][0m Map 2 : DiskLog.sh
+[47;30m[2019-03-26 18:47][0m Map 3 : Users.sh
+[47;30m[2019-03-26 18:47][0m Map 4 : ProcLog.sh
+[47;30m[2019-03-26 18:47][0m Map 5 : SysInfo.sh
+[47;30m[2019-03-26 18:47][0m listenHeartPort:10008
+[47;30m[2019-03-26 18:47][0m listenChatPort:9008
+[47;30m[2019-03-26 18:47][0m loginToServerPort:8731
+[47;30m[2019-03-26 18:47][0m sendFileToServerPort:8733
+[47;30m[2019-03-26 18:47][0m ServerIp:[192.168.2.86]
+[47;30m[2019-03-26 18:47][0m ->	父进程:
+[47;30m[2019-03-26 18:47][0m -->	子进程:开始心跳监听
+[47;30m[2019-03-26 18:47][0m ->	父进程:
+[47;30m[2019-03-26 18:47][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-03-26 18:47][0m ----Start  listenChatPort:9008----
+[47;30m[2019-03-26 18:47][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-03-26 18:47][0m -->兄弟进程:开始自检工作
+[47;30m[2019-03-26 18:47][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 18:47][0m 2019-03-26__18:47:31 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__18:47:31 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 18:49][0m Map 0 : CpuLog.sh
+[47;30m[2019-03-26 18:49][0m Map 1 : MemLog.sh
+[47;30m[2019-03-26 18:49][0m Map 2 : DiskLog.sh
+[47;30m[2019-03-26 18:49][0m Map 3 : Users.sh
+[47;30m[2019-03-26 18:49][0m Map 4 : ProcLog.sh
+[47;30m[2019-03-26 18:49][0m Map 5 : SysInfo.sh
+[47;30m[2019-03-26 18:49][0m listenHeartPort:10008
+[47;30m[2019-03-26 18:49][0m listenChatPort:9008
+[47;30m[2019-03-26 18:49][0m loginToServerPort:8731
+[47;30m[2019-03-26 18:49][0m sendFileToServerPort:8733
+[47;30m[2019-03-26 18:49][0m ServerIp:[192.168.2.86]
+[47;30m[2019-03-26 18:49][0m ->	父进程:
+[47;30m[2019-03-26 18:49][0m -->	子进程:开始心跳监听
+[47;30m[2019-03-26 18:49][0m ->	父进程:
+[47;30m[2019-03-26 18:49][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-03-26 18:49][0m ----Start  listenChatPort:9008----
+[47;30m[2019-03-26 18:49][0m -->兄弟进程:开始自检工作
+[47;30m[2019-03-26 18:49][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-03-26 18:49][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 18:49][0m 2019-03-26__18:49:08 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__18:49:08 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 18:49][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 18:49][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 18:49][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 18:49][0m 自检10次，master 没有回应
+[47;30m[2019-03-26 18:49][0m 准备呼唤心跳
+[47;30m[2019-03-26 18:49][0m 开始呼唤master-[10]次
+[47;30m[2019-03-26 18:49][0m .... [47;30m[2019-03-26 18:49][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 18:50][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 18:50][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 18:50][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 18:50][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 18:50][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 18:53][0m Map 0 : CpuLog.sh
+[47;30m[2019-03-26 18:53][0m Map 1 : MemLog.sh
+[47;30m[2019-03-26 18:53][0m Map 2 : DiskLog.sh
+[47;30m[2019-03-26 18:53][0m Map 3 : Users.sh
+[47;30m[2019-03-26 18:53][0m Map 4 : ProcLog.sh
+[47;30m[2019-03-26 18:53][0m Map 5 : SysInfo.sh
+[47;30m[2019-03-26 18:53][0m listenHeartPort:10008
+[47;30m[2019-03-26 18:53][0m listenChatPort:9008
+[47;30m[2019-03-26 18:53][0m loginToServerPort:8731
+[47;30m[2019-03-26 18:53][0m sendFileToServerPort:8733
+[47;30m[2019-03-26 18:53][0m ServerIp:[192.168.2.86]
+[47;30m[2019-03-26 18:53][0m ->	父进程:
+[47;30m[2019-03-26 18:53][0m -->	子进程:开始心跳监听
+[47;30m[2019-03-26 18:53][0m ->	父进程:
+[47;30m[2019-03-26 18:53][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-03-26 18:53][0m ----Start  listenChatPort:9008----
+[47;30m[2019-03-26 18:53][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-03-26 18:53][0m -->兄弟进程:开始自检工作
+[47;30m[2019-03-26 18:53][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 18:53][0m 2019-03-26__18:53:02 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__18:53:02 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 18:53][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 18:53][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 18:53][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 18:53][0m 自检10次，master 没有回应
+[47;30m[2019-03-26 18:53][0m 准备呼唤心跳
+[47;30m[2019-03-26 18:53][0m 开始呼唤master-[10]次
+[47;30m[2019-03-26 18:53][0m .... [47;30m[2019-03-26 18:53][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 18:53][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 18:54][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 18:54][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 18:54][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 18:54][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 18:54][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 18:54][0m 2019-03-26__18:54:04 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__18:54:04 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 18:54][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 18:54][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 18:54][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 18:54][0m 自检10次，master 没有回应
+[47;30m[2019-03-26 18:54][0m 准备呼唤心跳
+[47;30m[2019-03-26 18:54][0m 开始呼唤master-[10]次
+[47;30m[2019-03-26 18:54][0m .... [47;30m[2019-03-26 18:54][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 18:54][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 18:55][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 18:55][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 18:55][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 18:55][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 19:38][0m Map 0 : CpuLog.sh
+[47;30m[2019-03-26 19:38][0m Map 1 : MemLog.sh
+[47;30m[2019-03-26 19:38][0m Map 2 : DiskLog.sh
+[47;30m[2019-03-26 19:38][0m Map 3 : Users.sh
+[47;30m[2019-03-26 19:38][0m Map 4 : ProcLog.sh
+[47;30m[2019-03-26 19:38][0m Map 5 : SysInfo.sh
+[47;30m[2019-03-26 19:38][0m listenHeartPort:10008
+[47;30m[2019-03-26 19:38][0m listenChatPort:9008
+[47;30m[2019-03-26 19:38][0m loginToServerPort:8731
+[47;30m[2019-03-26 19:38][0m sendFileToServerPort:8733
+[47;30m[2019-03-26 19:38][0m ServerIp:[192.168.2.86]
+[47;30m[2019-03-26 19:38][0m ->	父进程:
+[47;30m[2019-03-26 19:38][0m -->	子进程:开始心跳监听
+[47;30m[2019-03-26 19:38][0m ->	父进程:
+[47;30m[2019-03-26 19:38][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-03-26 19:38][0m ----Start  listenChatPort:9008----
+[47;30m[2019-03-26 19:38][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-03-26 19:38][0m -->兄弟进程:开始自检工作
+[47;30m[2019-03-26 19:38][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:38][0m 2019-03-26__19:38:28 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:38:28 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:38][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:38][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:38][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:39][0m 自检10次，master 没有回应
+[47;30m[2019-03-26 19:39][0m 准备呼唤心跳
+[47;30m[2019-03-26 19:39][0m 开始呼唤master-[10]次
+[47;30m[2019-03-26 19:39][0m .... [47;30m[2019-03-26 19:39][0m get hearBeat ok 
+[47;30m[2019-03-26 19:39][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:39][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:39][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 19:39][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 19:39][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:39][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 19:39][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:39][0m 2019-03-26__19:39:29 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:39:29 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:39][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:39][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:42][0m Map 0 : CpuLog.sh
+[47;30m[2019-03-26 19:42][0m Map 1 : MemLog.sh
+[47;30m[2019-03-26 19:42][0m Map 2 : DiskLog.sh
+[47;30m[2019-03-26 19:42][0m Map 3 : Users.sh
+[47;30m[2019-03-26 19:42][0m Map 4 : ProcLog.sh
+[47;30m[2019-03-26 19:42][0m Map 5 : SysInfo.sh
+[47;30m[2019-03-26 19:42][0m listenHeartPort:10008
+[47;30m[2019-03-26 19:42][0m listenChatPort:9008
+[47;30m[2019-03-26 19:42][0m loginToServerPort:8731
+[47;30m[2019-03-26 19:42][0m sendFileToServerPort:8733
+[47;30m[2019-03-26 19:42][0m ServerIp:[192.168.2.86]
+[47;30m[2019-03-26 19:42][0m ->	父进程:
+[47;30m[2019-03-26 19:42][0m -->	子进程:开始心跳监听
+[47;30m[2019-03-26 19:42][0m ->	父进程:
+[47;30m[2019-03-26 19:42][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-03-26 19:42][0m ----Start  listenChatPort:9008----
+[47;30m[2019-03-26 19:42][0m -->兄弟进程:开始自检工作
+[47;30m[2019-03-26 19:42][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-03-26 19:42][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:42][0m 2019-03-26__19:42:09 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:42:09 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:42][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:42][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:42][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:42][0m 自检10次，master 没有回应
+[47;30m[2019-03-26 19:42][0m 准备呼唤心跳
+[47;30m[2019-03-26 19:42][0m 开始呼唤master-[10]次
+[47;30m[2019-03-26 19:42][0m .... [47;30m[2019-03-26 19:42][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:43][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:43][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 19:43][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 19:43][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:43][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 19:43][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:43][0m 2019-03-26__19:43:10 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:43:10 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:43][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:43][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:43][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:43][0m 自检10次，master 没有回应
+[47;30m[2019-03-26 19:43][0m 准备呼唤心跳
+[47;30m[2019-03-26 19:43][0m 开始呼唤master-[10]次
+[47;30m[2019-03-26 19:43][0m .... [47;30m[2019-03-26 19:43][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:44][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:44][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 19:44][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 19:44][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:44][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 19:44][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:44][0m 2019-03-26__19:44:12 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:44:12 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:44][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:44][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:44][0m 自检10次，master 没有回应
+[47;30m[2019-03-26 19:44][0m 准备呼唤心跳
+[47;30m[2019-03-26 19:44][0m 开始呼唤master-[10]次
+[47;30m[2019-03-26 19:44][0m .... [47;30m[2019-03-26 19:44][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:44][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:44][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:45][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:45][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 19:45][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 19:52][0m Map 0 : CpuLog.sh
+[47;30m[2019-03-26 19:52][0m Map 1 : MemLog.sh
+[47;30m[2019-03-26 19:52][0m Map 2 : DiskLog.sh
+[47;30m[2019-03-26 19:52][0m Map 3 : Users.sh
+[47;30m[2019-03-26 19:52][0m Map 4 : ProcLog.sh
+[47;30m[2019-03-26 19:52][0m Map 5 : SysInfo.sh
+[47;30m[2019-03-26 19:52][0m listenHeartPort:10008
+[47;30m[2019-03-26 19:52][0m listenChatPort:9008
+[47;30m[2019-03-26 19:52][0m loginToServerPort:8731
+[47;30m[2019-03-26 19:52][0m sendFileToServerPort:8733
+[47;30m[2019-03-26 19:52][0m ServerIp:[192.168.2.86]
+[47;30m[2019-03-26 19:52][0m ->	父进程:
+[47;30m[2019-03-26 19:52][0m -->	子进程:开始心跳监听
+[47;30m[2019-03-26 19:52][0m ->	父进程:
+[47;30m[2019-03-26 19:52][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-03-26 19:52][0m ----Start  listenChatPort:9008----
+[47;30m[2019-03-26 19:52][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-03-26 19:52][0m -->兄弟进程:开始自检工作
+[47;30m[2019-03-26 19:52][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:52][0m 2019-03-26__19:52:20 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:52:20 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:52][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:52][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:52][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:52][0m get hearBeat ok 
+[47;30m[2019-03-26 19:52][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 19:53][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:53][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:53][0m 2019-03-26__19:53:21 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:53:21 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m get hearBeat ok 
+[47;30m[2019-03-26 19:53][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:53][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:53][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:54][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:54][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 19:54][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 19:54][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:54][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 19:54][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:54][0m 2019-03-26__19:54:22 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:54:22 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:54][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:54][0m 自检10次，master 没有回应
+[47;30m[2019-03-26 19:54][0m 准备呼唤心跳
+[47;30m[2019-03-26 19:54][0m 开始呼唤master-[10]次
+[47;30m[2019-03-26 19:54][0m .... [47;30m[2019-03-26 19:54][0m get hearBeat ok 
+[47;30m[2019-03-26 19:54][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:54][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:54][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:54][0m get hearBeat ok 
+[47;30m[2019-03-26 19:55][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:55][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:55][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 19:55][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 19:55][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:55][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 19:55][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:55][0m 2019-03-26__19:55:23 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:55:23 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:55][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:55][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:55][0m 自检10次，master 没有回应
+[47;30m[2019-03-26 19:55][0m 准备呼唤心跳
+[47;30m[2019-03-26 19:55][0m 开始呼唤master-[10]次
+[47;30m[2019-03-26 19:55][0m .... [47;30m[2019-03-26 19:55][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:56][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:56][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:56][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 19:56][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 19:56][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:56][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 19:56][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:56][0m 2019-03-26__19:56:24 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:56:24 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:56][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:56][0m get hearBeat ok 
+[47;30m[2019-03-26 19:56][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:56][0m get hearBeat ok 
+[47;30m[2019-03-26 19:56][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:56][0m get hearBeat ok 
+[47;30m[2019-03-26 19:56][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:56][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:57][0m get hearBeat ok 
+[47;30m[2019-03-26 19:57][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 19:57][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 19:57][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:57][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:57][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 19:57][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:57][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:57][0m 2019-03-26__19:57:25 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:57:25 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:57][0m get hearBeat ok 
+[47;30m[2019-03-26 19:57][0m get hearBeat ok 
+[47;30m[2019-03-26 19:57][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:57][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:57][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:57][0m get hearBeat ok 
+[47;30m[2019-03-26 19:58][0m Map 0 : CpuLog.sh
+[47;30m[2019-03-26 19:58][0m Map 1 : MemLog.sh
+[47;30m[2019-03-26 19:58][0m Map 2 : DiskLog.sh
+[47;30m[2019-03-26 19:58][0m Map 3 : Users.sh
+[47;30m[2019-03-26 19:58][0m Map 4 : ProcLog.sh
+[47;30m[2019-03-26 19:58][0m Map 5 : SysInfo.sh
+[47;30m[2019-03-26 19:58][0m listenHeartPort:10008
+[47;30m[2019-03-26 19:58][0m listenChatPort:9008
+[47;30m[2019-03-26 19:58][0m loginToServerPort:8731
+[47;30m[2019-03-26 19:58][0m sendFileToServerPort:8733
+[47;30m[2019-03-26 19:58][0m ServerIp:[192.168.2.86]
+[47;30m[2019-03-26 19:58][0m ->	父进程:
+[47;30m[2019-03-26 19:58][0m -->	子进程:开始心跳监听
+[47;30m[2019-03-26 19:58][0m ->	父进程:
+[47;30m[2019-03-26 19:58][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-03-26 19:58][0m ----Start  listenChatPort:9008----
+[47;30m[2019-03-26 19:58][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-03-26 19:58][0m -->兄弟进程:开始自检工作
+[47;30m[2019-03-26 19:58][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:58][0m 2019-03-26__19:58:17 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:58:17 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:58][0m get hearBeat ok 
+[47;30m[2019-03-26 19:58][0m get hearBeat ok 
+[47;30m[2019-03-26 19:58][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:58][0m get hearBeat ok 
+[47;30m[2019-03-26 19:58][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:58][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:58][0m get hearBeat ok 
+[47;30m[2019-03-26 19:59][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:59][0m get hearBeat ok 
+[47;30m[2019-03-26 19:59][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:59][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 19:59][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 19:59][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:59][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 19:59][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 19:59][0m 2019-03-26__19:59:18 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__19:59:18 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 19:59][0m get hearBeat ok 
+[47;30m[2019-03-26 19:59][0m get hearBeat ok 
+[47;30m[2019-03-26 19:59][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 19:59][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 19:59][0m get hearBeat ok 
+[47;30m[2019-03-26 19:59][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 19:59][0m get hearBeat ok 
+[47;30m[2019-03-26 19:59][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 20:00][0m get hearBeat ok 
+[47;30m[2019-03-26 20:00][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:00][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 20:00][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 20:00][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 20:00][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 20:00][0m get hearBeat ok 
+[47;30m[2019-03-26 20:00][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 20:00][0m 2019-03-26__20:00:19 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__20:00:19 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 20:00][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 20:00][0m get hearBeat ok 
+[47;30m[2019-03-26 20:00][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:00][0m get hearBeat ok 
+[47;30m[2019-03-26 20:00][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 20:00][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 20:00][0m get hearBeat ok 
+[47;30m[2019-03-26 20:01][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:01][0m get hearBeat ok 
+[47;30m[2019-03-26 20:01][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 20:01][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 20:01][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 20:01][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 20:01][0m get hearBeat ok 
+[47;30m[2019-03-26 20:01][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 20:01][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 20:01][0m 2019-03-26__20:01:20 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__20:01:20 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 20:01][0m seccuess sendfile log/CpuLog.sh.log
+[47;30m[2019-03-26 20:01][0m seccuess sendfile log/MemLog.sh.log
+[47;30m[2019-03-26 20:01][0m seccuess sendfile log/DiskLog.sh.log
+[47;30m[2019-03-26 20:01][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:01][0m seccuess sendfile log/Users.sh.log
+[47;30m[2019-03-26 20:01][0m seccuess sendfile log/ProcLog.sh.log
+[47;30m[2019-03-26 20:01][0m get hearBeat ok 
+[47;30m[2019-03-26 20:01][0m seccuess sendfile log/SysInfo.sh.log
+[47;30m[2019-03-26 20:01][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 20:01][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 20:01][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:02][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 20:02][0m get hearBeat ok 
+[47;30m[2019-03-26 20:02][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 20:02][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 20:02][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 20:02][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 20:02][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 20:02][0m 2019-03-26__20:02:22 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__20:02:22 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 20:02][0m get hearBeat ok 
+[47;30m[2019-03-26 20:02][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:02][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 20:02][0m get hearBeat ok 
+[47;30m[2019-03-26 20:02][0m get hearBeat ok 
+[47;30m[2019-03-26 20:02][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 20:02][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 20:02][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:02][0m get hearBeat ok 
+[47;30m[2019-03-26 20:04][0m Map 0 : CpuLog.sh
+[47;30m[2019-03-26 20:04][0m Map 1 : MemLog.sh
+[47;30m[2019-03-26 20:04][0m Map 2 : DiskLog.sh
+[47;30m[2019-03-26 20:04][0m Map 3 : Users.sh
+[47;30m[2019-03-26 20:04][0m Map 4 : ProcLog.sh
+[47;30m[2019-03-26 20:04][0m Map 5 : SysInfo.sh
+[47;30m[2019-03-26 20:04][0m listenHeartPort:10008
+[47;30m[2019-03-26 20:04][0m listenChatPort:9008
+[47;30m[2019-03-26 20:04][0m loginToServerPort:8731
+[47;30m[2019-03-26 20:04][0m sendFileToServerPort:8733
+[47;30m[2019-03-26 20:04][0m ServerIp:[192.168.2.86]
+[47;30m[2019-03-26 20:04][0m ->	父进程:
+[47;30m[2019-03-26 20:04][0m -->	子进程:开始心跳监听[10008]
+[47;30m[2019-03-26 20:04][0m ->	父进程:
+[47;30m[2019-03-26 20:04][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-03-26 20:04][0m ----Start  listenChatPort:9008----
+[47;30m[2019-03-26 20:04][0m -->兄弟进程:开始自检工作
+[47;30m[2019-03-26 20:04][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-03-26 20:04][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 20:04][0m 2019-03-26__20:04:25 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__20:04:25 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 20:04][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 20:04][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:04][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 20:05][0m 自检10次，master 没有回应
+[47;30m[2019-03-26 20:05][0m 准备呼唤心跳
+[47;30m[2019-03-26 20:05][0m 开始呼唤master-[10]次
+[47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m 开始呼唤master-[20]次
+[47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 20:05][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 20:05][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 20:05][0m 2019-03-26__20:05:27 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__20:05:27 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m 开始呼唤master-[40]次
+[47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:05][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m 自检10次，master 没有回应
+[47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m 开始呼唤master-[80]次
+[47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-26 20:06][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m [47;31mfind EVIL process [0m
+[47;30m[2019-03-26 20:06][0m 2019-03-26__20:06:28 ./client_beat 5468 tanxiang 99.90% 0.00%
+2019-03-26__20:06:28 ./client_beat 5479 tanxiang 99.90% 0.00%
+
+[47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:06][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-26 20:07][0m .... [47;30m[2019-03-28 18:10][0m Map 0 : CpuLog.sh
+[47;30m[2019-03-28 18:10][0m Map 1 : MemLog.sh
+[47;30m[2019-03-28 18:10][0m Map 2 : DiskLog.sh
+[47;30m[2019-03-28 18:10][0m Map 3 : Users.sh
+[47;30m[2019-03-28 18:10][0m Map 4 : ProcLog.sh
+[47;30m[2019-03-28 18:10][0m Map 5 : SysInfo.sh
+[47;30m[2019-03-28 18:10][0m listenHeartPort:10008
+[47;30m[2019-03-28 18:10][0m listenChatPort:9008
+[47;30m[2019-03-28 18:10][0m loginToServerPort:8731
+[47;30m[2019-03-28 18:10][0m sendFileToServerPort:8733
+[47;30m[2019-03-28 18:10][0m ServerIp:[192.168.2.86]
+[47;30m[2019-03-28 18:10][0m ->	父进程:
+[47;30m[2019-03-28 18:10][0m -->	子进程:开始心跳监听[10008]
+[47;30m[2019-03-28 18:10][0m ->	父进程:
+[47;30m[2019-03-28 18:10][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-03-28 18:10][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-03-28 18:10][0m ----Start  listenChatPort:9008----
+[47;30m[2019-03-28 18:10][0m -->兄弟进程:开始自检工作
+[47;30m[2019-03-28 18:10][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-28 18:10][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-28 18:11][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-28 18:11][0m 自检10次，master 没有回应
+[47;30m[2019-03-28 18:11][0m 准备呼唤心跳
+[47;30m[2019-03-28 18:11][0m 开始呼唤master-[10]次
+[47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-28 18:11][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m 开始呼唤master-[20]次
+[47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-28 18:11][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-28 18:11][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-28 18:11][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-03-28 18:11][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-28 18:11][0m 开始呼唤master-[40]次
+[47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:11][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m 自检10次，master 没有回应
+[47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m 开始呼唤master-[80]次
+[47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m finish 1 work start to write in log/SysInfo.sh.log
+[47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m finish 1 work start to write in log/ProcLog.sh.log
+[47;30m[2019-03-28 18:12][0m finish 1 work start to write in log/DiskLog.sh.log
+[47;30m[2019-03-28 18:12][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:12][0m .... [47;30m[2019-03-28 18:13][0m .... [47;30m[2019-03-28 18:13][0m .... [47;30m[2019-03-28 18:13][0m .... [47;30m[2019-03-28 18:13][0m finish 1 work start to write in log/Users.sh.log
+[47;30m[2019-03-28 18:13][0m .... [47;30m[2019-03-28 18:13][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-03-28 18:13][0m .... [47;30m[2019-03-28 18:13][0m .... [47;30m[2019-03-28 18:13][0m .... [47;30m[2019-03-28 18:13][0m .... [47;30m[2019-03-28 18:13][0m .... [47;30m[2019-03-28 18:13][0m .... [47;30m[2019-03-28 18:13][0m .... [47;30m[2019-03-28 18:13][0m .... [47;30m[2019-03-28 18:30][0m Map 0 : CpuLog.sh
+[47;30m[2019-03-28 18:30][0m Map 1 : MemLog.sh
+[47;30m[2019-03-28 18:30][0m Map 2 : DiskLog.sh
+[47;30m[2019-03-28 18:30][0m Map 3 : Users.sh
+[47;30m[2019-03-28 18:30][0m Map 4 : ProcLog.sh
+[47;30m[2019-03-28 18:30][0m Map 5 : SysInfo.sh
+[47;30m[2019-03-28 18:30][0m listenHeartPort:10008
+[47;30m[2019-03-28 18:30][0m listenChatPort:9008
+[47;30m[2019-03-28 18:30][0m loginToServerPort:8731
+[47;30m[2019-03-28 18:30][0m sendFileToServerPort:8733
+[47;30m[2019-03-28 18:30][0m ServerIp:[192.168.2.86]
+[47;30m[2019-03-28 18:30][0m ->	父进程:
+[47;30m[2019-03-28 18:30][0m -->	子进程:开始心跳监听[10008]
+[47;30m[2019-03-28 18:30][0m ->	父进程:
+[47;30m[2019-03-28 18:30][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-03-28 18:30][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-03-28 18:30][0m ----Start  listenChatPort:9008----
+[47;30m[2019-03-28 18:30][0m -->兄弟进程:开始自检工作
+[47;30m[2019-03-28 18:32][0m Map 0 : CpuLog.sh
+[47;30m[2019-03-28 18:32][0m Map 1 : MemLog.sh
+[47;30m[2019-03-28 18:32][0m Map 2 : DiskLog.sh
+[47;30m[2019-03-28 18:32][0m Map 3 : Users.sh
+[47;30m[2019-03-28 18:32][0m Map 4 : ProcLog.sh
+[47;30m[2019-03-28 18:32][0m Map 5 : SysInfo.sh
+[47;30m[2019-03-28 18:32][0m listenHeartPort:10008
+[47;30m[2019-03-28 18:32][0m listenChatPort:9008
+[47;30m[2019-03-28 18:32][0m loginToServerPort:8731
+[47;30m[2019-03-28 18:32][0m sendFileToServerPort:8733
+[47;30m[2019-03-28 18:32][0m ServerIp:[192.168.2.86]
+[47;30m[2019-03-28 18:32][0m ->	父进程:
+[47;30m[2019-03-28 18:32][0m -->	子进程:开始心跳监听[10008]
+[47;30m[2019-03-28 18:32][0m ->	父进程:
+[47;30m[2019-03-28 18:32][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-03-28 18:32][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-03-28 18:32][0m ----Start  listenChatPort:9008----
+[47;30m[2019-03-28 18:32][0m -->兄弟进程:开始自检工作
+[47;30m[2019-04-02 18:09][0m Map 0 : CpuLog.sh
+[47;30m[2019-04-02 18:09][0m Map 1 : MemLog.sh
+[47;30m[2019-04-02 18:09][0m Map 2 : DiskLog.sh
+[47;30m[2019-04-02 18:09][0m Map 3 : Users.sh
+[47;30m[2019-04-02 18:09][0m Map 4 : ProcLog.sh
+[47;30m[2019-04-02 18:09][0m Map 5 : SysInfo.sh
+[47;30m[2019-04-02 18:09][0m listenHeartPort:10008
+[47;30m[2019-04-02 18:09][0m listenChatPort:9008
+[47;30m[2019-04-02 18:09][0m loginToServerPort:8731
+[47;30m[2019-04-02 18:09][0m sendFileToServerPort:8733
+[47;30m[2019-04-02 18:09][0m ServerIp:[192.168.2.86]
+[47;30m[2019-04-02 18:09][0m ->	父进程:
+[47;30m[2019-04-02 18:09][0m -->	子进程:开始心跳监听[10008]
+[47;30m[2019-04-02 18:09][0m ->	父进程:
+[47;30m[2019-04-02 18:09][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-04-02 18:09][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-04-02 18:09][0m ----Start  listenChatPort:9008----
+[47;30m[2019-04-02 18:09][0m -->兄弟进程:开始自检工作
+[47;30m[2019-04-02 18:09][0m finish 5 work start to write in log/MemLog.sh.log
+[47;30m[2019-04-02 18:09][0m finish 5 work start to write in log/CpuLog.sh.log
+[47;30m[2019-04-02 18:09][0m Map 0 : CpuLog.sh
+[47;30m[2019-04-02 18:09][0m Map 1 : MemLog.sh
+[47;30m[2019-04-02 18:09][0m Map 2 : DiskLog.sh
+[47;30m[2019-04-02 18:09][0m Map 3 : Users.sh
+[47;30m[2019-04-02 18:09][0m Map 4 : ProcLog.sh
+[47;30m[2019-04-02 18:09][0m Map 5 : SysInfo.sh
+[47;30m[2019-04-02 18:09][0m listenHeartPort:10008
+[47;30m[2019-04-02 18:09][0m listenChatPort:9008
+[47;30m[2019-04-02 18:09][0m loginToServerPort:8731
+[47;30m[2019-04-02 18:09][0m sendFileToServerPort:8733
+[47;30m[2019-04-02 18:09][0m ServerIp:[192.168.2.86]
+[47;30m[2019-04-02 18:09][0m ->	父进程:
+[47;30m[2019-04-02 18:09][0m -->	子进程:开始心跳监听[10008]
+[47;30m[2019-04-02 18:09][0m ->	父进程:
+[47;30m[2019-04-02 18:09][0m -->	兄弟进程:等待主动连接Master
+[47;30m[2019-04-02 18:09][0m -->兄弟进程:等待Maste命令
+[47;30m[2019-04-02 18:09][0m ----Start  listenChatPort:9008----
+[47;30m[2019-04-02 18:09][0m -->兄弟进程:开始自检工作
